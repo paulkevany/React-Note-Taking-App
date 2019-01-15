@@ -1,0 +1,37 @@
+poolid:  eu-west-1_UdsLQC4tB
+
+pool arn:  arn:aws:cognito-idp:eu-west-1:300304079686:userpool/eu-west-1_UdsLQC4tB
+
+App CLient ID: 39b988iutnkut80en0gmp47m17
+
+Username: paulkevany
+
+Access key:  AKIAIA4UNNTTSPE3CEQQ
+
+Secret Key: 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
+
+----------------------------------------------------
+
+
+NOte ID: 4435d390-1586-11e9-83c0-1332c59a6213
+
+
+region: eu-west-1
+
+
+Endpoints: 
+POST - https://yoxbpyrbcb.execute-api.eu-west-1.amazonaws.com/prod/notes
+  GET - https://yoxbpyrbcb.execute-api.eu-west-1.amazonaws.com/prod/notes/{id}
+  GET - https://yoxbpyrbcb.execute-api.eu-west-1.amazonaws.com/prod/notes
+  PUT - https://yoxbpyrbcb.execute-api.eu-west-1.amazonaws.com/prod/notes/{id}
+  DELETE - https://yoxbpyrbcb.execute-api.eu-west-1.amazonaws.com/prod/notes/{id}
+
+
+ID: yoxbpyrbcb
+
+
+Identity Pool ID: eu-west-1:618d940e-352d-4dbb-945a-16a399643491
+
+
+
+const filename = '${Date.now()}-${file.name}';
