@@ -9,7 +9,8 @@ plugins:
 # serverless-webpack configuration
 # Enable auto-packing of external modules
 custom:
-  
+
+
   stage: ${opt:stage, self:provider.stage}
 
   tableName: ${self:custom.stage}-notes
@@ -36,7 +37,9 @@ provider:
   # commit your env.yml.
   #
   
-  environment: ${self:custom.tableName}
+  environment: 
+    tableName: ${self:custom.tableName}
+    stripeSecretKey: ${self:custom.environment.stripeSecretKey}
 
 
 
@@ -104,14 +107,14 @@ functions:
           cors: true
           authorizer: aws_iam
 
-billing:
-  handler: billing.main
-  events:
-    - http: 
-        path: billing
-        method: post
-        cors: true
-        authorizer: aws_iam
+  billing:
+    handler: billing.main
+    events:
+      - http: 
+          path: billing
+          method: post
+          cors: true
+          authorizer: aws_iam
           
 
 
