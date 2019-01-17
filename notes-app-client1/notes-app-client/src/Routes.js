@@ -19,7 +19,7 @@ export default({childProps}) =>
 <UnauthenticatedRoute path="/signup" exact component={Signup} props={childProps} />
 <UnauthenticatedRoute path="/login" exact component={Login} props={childProps}/>
 <AuthenticatedRoute path="/notes/new" exact component={NewNote} props={childProps} />
-<AuthenticatedRoute path="/notes/:id" exact component={Notes} props={childProps} />
+<UnauthenticatedRoute path="/notes/:id" exact component={Notes} props={childProps} />
 {}
 <Route component={NotFound} />
 </Switch>;
